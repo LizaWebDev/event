@@ -1,0 +1,37 @@
+body,
+table {
+    font-family: arial;
+}
+
+.progress {
+    overflow: hidden;
+    height: 12px;
+}
+
+.label {
+    text-align: center;
+}
+
+#td_progressp {
+    background-color: #26def7;
+}
+
+#td_progress {
+    background-color: #dfff88;
+}
+
+#td_rem_weekp,
+#td_rem_dayp,
+#td_rem_hourp,
+#td_rem_minp,
+#td_rem_secp {
+    background-color: #888888;
+}
+
+#td_rem_week,
+#td_rem_day,
+#td_rem_hour,
+#td_rem_min,
+#td_rem_sec {
+    background-color: #eeeeee;
+}

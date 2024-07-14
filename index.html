@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Сколько осталось до Нового 2025 года? (точный счетчик дней, часов минут, секунд)" />
+    <title>Событие</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="Init();">
+
+    <p class=MsoNormal style='text-align:center'><b><span style='font-size:20.0pt;font-family:Arial;color:red'>Отсчёт до
+                события</span></b></p>
+    <table style="border-spacing:0;padding:0;border:0;width:100%;height:60%">
+        <tr>
+            <td style="text-align:center">
+                <table>
+                    <col>
+                    <col>
+                    <col style="width:90%">
+                    <tr>
+                        <td colspan=3>До события осталось...</td>
+                    </tr>
+                    <tr>
+                        <td>недель:</td>
+                        <td id=td_rem_week_label style="text-align:right">?</td>
+                        <td>
+                            <script>DrawProgress("td_rem_week");</script>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>дней:</td>
+                        <td id=td_rem_day_label style="text-align:right">?</td>
+                        <td>
+                            <script>DrawProgress("td_rem_day");</script>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>часов:</td>
+                        <td id=td_rem_hour_label style="text-align:right">?</td>
+                        <td>
+                            <script>DrawProgress("td_rem_hour");</script>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>минут:</td>
+                        <td id=td_rem_min_label style="text-align:right">?</td>
+                        <td>
+                            <script>DrawProgress("td_rem_min");</script>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>секунд:</td>
+                        <td id=td_rem_sec_label style="text-align:right">?</td>
+                        <td>
+                            <script>DrawProgress("td_rem_sec");</script>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <table style="border-spacing:0;padding:0;border:0;width:100%">
+                    <tr>
+                        <td style="text-align:left" id=td_begin></td>
+                        <td style="text-align:center" id=td_now></td>
+                        <td style="text-align:right" id=td_end></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <script>DrawLabProgress("td_progress");</script>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <br>
+
+    <!--# include virtual="/ads.htm" -->
+
+</body>
+
+</html>
