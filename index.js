@@ -104,7 +104,7 @@ function OnInterval() {
     var str, strperc, val, begin, end;
 
     //2025
-    begin = new Date(year + 1, 6, 15, 18)
+    begin = new Date(year + 1, 6, 15, 20)
     end = new Date(year + 1, 6, 16, 10)
     Period(begin, end, "td_progress", "отсчёт ещё не начался", " прошло", "отсчёт закончился");
 
