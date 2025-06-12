@@ -105,7 +105,7 @@ function OnInterval() {
 
     begin = new Date(year + 1, 5, 9)
 
-    end = new Date(year + 2, 5, 8)
+    end = new Date(year + 1, 5, 23)
     Period(begin, end, "td_progress", "отсчёт ещё не начался", " прошло", "отсчёт закончился");
 
     //now
